@@ -24,7 +24,6 @@ h2 {
 
 h3 {
   font-size: 200%;
-  color: blue;
 }
 
 nav ul {
@@ -99,6 +98,10 @@ footer {
 
 div:hover .links {
   display: block;
+}
+
+h3:hover {
+  color: darkblue;
 }
 
 @media screen and (max-width: 768px) {
