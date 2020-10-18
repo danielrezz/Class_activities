@@ -30,8 +30,8 @@ body {
   /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
   font-size: 1.75rem;
   line-height: 1.5;
-  color: /* TODO: var gin */
-  background-color: /* TODO: var outer-space */
+  color: var(--gin);
+  background-color: var(--outer-space);
 }
 
 h1,
@@ -41,7 +41,7 @@ h4,
 h5,
 h6 {
   margin-bottom: 0.625rem;
-  color: /* TODO: var heliotrope */
+  color: var(--heliotrope);
   font-weight: 700;
   line-height: 1.1;
 }
@@ -102,7 +102,10 @@ main {
 
 main section figure {
   /* outline is like border, but on the outside of the box instead of inside */
-  outline: 2px dashed /* TODO var gin */
+  outline: 2px dashed var(--gin);
+  width: 33%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 footer {
