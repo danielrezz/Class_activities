@@ -8,8 +8,8 @@
 
 /* set content highlight color and background */
 ::selection {
-  background-color: /* TODO: var bright-turquoise */
-  color: /* TODO: var outer-space */
+  background-color: var(--bright-turquoise);
+  color: var(--outer-space);
 }
 
 /* on <pre> click, select all contents so the code is highlighted */
