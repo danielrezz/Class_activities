@@ -102,13 +102,61 @@ main {
 
 main section figure {
   /* outline is like border, but on the outside of the box instead of inside */
-  outline: 2px dashed var(--gin);
-  width: 33%;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  outline: 2px dashed var(--gin);
+}
+
+main section figure p {
+  /* display: flex;
+  flex-wrap: wrap; */
+  color: var(--heliotrope)
+}
+
+main section figure h2 {
+  position: relative;
+  background-color: var(--outer-space);
+  color: var(--heliotrope);
+  border: 2px solid var(--gin);
+  border-radius: 8px;
+  margin: 0 auto;
+  text-align: center;
+  width: 95%;
+  top: -25px;
+}
+
+main section {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+main section figure pre {
+  white-space: pre-wrap;
+  overflow: auto;
+  tab-size: 4;
+  color: var(--gin);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px;
+  background-image: linear-gradient( rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100% ); 
+}
+            
 }
 
 footer {
   margin: 1.5rem;
   text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  main section figure {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }

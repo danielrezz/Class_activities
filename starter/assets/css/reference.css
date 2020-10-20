@@ -1,0 +1,155 @@
+Reference
+
+/* color scheme sourced from http://khroma.co/generator/ */
+:root {
+    --outer-space: #33393f;
+    --bright-turquoise: #2aefcb;
+    --gin: #e0eae4;
+    --heliotrope: #e866ec;
+  }
+  
+  /* set content highlight color and background */
+  ::selection {
+    background-color: var(--bright-turquoise);
+    color: var(--outer-space);
+  }
+  
+  /* on <pre> click, select all contents so the code is highlighted */
+  pre:active {
+    user-select: all;
+  }
+  
+  html {
+    /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+    font-size: 62.5%;
+  }
+  
+  body {
+    /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  
+    /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
+    font-size: 1.75rem;
+    line-height: 1.5;
+    color: var(--gin);
+    background-color: var(--outer-space);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.625rem;
+    color: var(--heliotrope);
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  
+  h1 {
+    /* 4rem = 40px (4 * 10px) */
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+  }
+  
+  h3 {
+    font-size: 3rem;
+  }
+  
+  h4 {
+    font-size: 2.5rem;
+  }
+  
+  h5 {
+    font-size: 2rem;
+  }
+  
+  h6 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  code {
+    /* Monospace font stack is used for our code blocks to make it look more like code */
+    font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+      'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+      'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
+      monospace;
+  }
+  
+  header {
+    width: 96%;
+    margin: 0 auto;
+    padding: 2.5rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    padding: 1rem 1.2rem;
+    font-size: 4.5rem;
+  }
+  
+  main {
+    width: 96%;
+    margin: 2rem auto;
+  }
+  
+  main section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  main section figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    margin: 5rem 2rem;
+    outline: 2px dashed var(--gin);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  main section figure h2 {
+    position: relative;
+    background-color: var(--outer-space);
+    color: var(--heliotrope);
+    border: 2px solid var(--gin);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    top: -4rem;
+    margin: 0 auto;
+    width: 95%;
+  }
+  
+  /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
+  main section figure:hover,
+  main section figure:hover h2 {
+    box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+  }
+  
+  pre {
+    border-radius: 8px;
+    background-color: var(--heliotrope);
+    background: linear-gradient( rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100% );
+  }
+  
+  footer {
+    margin: 1.5rem;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 1032px) {
+    main section figure {
+      flex: 0 0 100%;
+    }
+  }
