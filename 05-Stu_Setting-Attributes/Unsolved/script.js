@@ -1,8 +1,5 @@
-var images = document.querySelectorAll("img")
+var site1El = document.querySelector(".site1");
 
-images[0].setAttribute("src", "image_1.jpg");
-
-// now need to create for loop
-
-
-document.querySelectorAll("img").setAttribute("alt", "guy sitting at computer");
+site1El.lastElementChild.setAttribute("href", "https://www.youtube.com/");
+site1El.lastElementChild.children[0].setAttribute("src", "images/image_1.jpg");
+site1El.lastElementChild.children[0].setAttribute("alt", "guy sitting at computer");
