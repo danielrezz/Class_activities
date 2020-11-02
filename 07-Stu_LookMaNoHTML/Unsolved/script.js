@@ -5,6 +5,6 @@ var h1El = document.createElement("h1");
 
 h1El.textContent = "Hello World";
 
-h1El.setAttribute("style", "margin:auto; width:50%; text-align:center;");
-
 body.appendChild(h1El);
+
+h1El.setAttribute("style", "margin:auto; width:50%; text-align:center;");
